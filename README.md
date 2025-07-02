@@ -29,7 +29,7 @@ SIIT is a modular, n8n-based pipeline for analyzing corporate AI, infrastructure
 ---
 
 ## 📄 Modules
-- **Ingestion Plugin:** Ingests 1,000 synthetic incidents (Faker, OECD.AI) & 100 images (PIL) to Supabase *(Bronze)* [`Code`](/ingestion/ingestion.py)
+- **Ingestion Plugin:** Ingests 1,000 synthetic incidents (Faker, OECD.AI) & 100 images (PIL) to Supabase *(Bronze)* [`Code`](/ingestion.py)
 - **SQL Plugin:** Aggregates to `results_table` with `avg_impact`, `anomaly_count` [`Code`](/sql/sql_plugin.sql)
 - **ETL Plugin:** PySpark ETL (Databricks) with DLP (Presidio) to Supabase *(Silver)* [`Code`](/etl/etl_plugin.py)
 - **NLP Plugin:** DistilBERT sentiment + PyTorch severity prediction to Supabase *(Gold)* [`Code`](/nlp/nlp_plugin.py)
